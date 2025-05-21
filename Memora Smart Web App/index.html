@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html id="home">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <title>Memora Web App</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id = "logo">
+                <img src = "images/memora logo bg.jpg" id ="logo-img">
+                </div>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="#cbt">Courses</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <button class="close-menu" onclick="closeMobileMenu()">×</button>
+                    <ul class="mobile-nav-links"></ul>
+                </div>
+            </nav>
+        </header>        
+        <main>
+            <div id="hero-section" class="wavy-box">
+                <div id="hero-intro">
+                <h1 id="hero-title">Memora Smart Technologies</h1>
+                <p id="hero-text">Integrating cutting-edge technologies with strategic digital marketing to deliver solutions that address critical business needs and drive measurable sales growth. Our expertise spans software development, digital marketing, and impactful training..</p>
+                <button id="action-btn" class="action">Contact Us</button>
+                </div>
+                <div id="hero-image">
+                    <img src="images/student 8.jpeg" id="hero-img">
+                </div>
+            </div>
+            <svg class="d-lg-block d-none" style="background:rgba(255,255,255,0.1);" width="100%" height="40" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#0077B5;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#6A11CB;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path id="wavepath" d="M0,0 L110,0C35,150 35,0 0,100z" fill="url(#waveGradient)"></path>
+            </svg>
+            <div id="services">
+                <h2>Our <span id="serve-color">Services</span></h2>
+                <div id="service-container">
+                    <div class="service-cards"><i class="fas fa-chart-line"></i><span class="topics">Digital Marketing</span><p>Boost your brand’s online presence with data-driven strategies, social media management, SEO, and targeted advertising. Let’s grow your business together!<button class="learn-more">Learn More</button></p>
+                    </div>
+                    <div class="service-cards"><i class="fas fa-code"></i><span class="topics">Web Development</span><p>We build fast, secure, and responsive websites tailored to your business needs. Let’s bring your vision to life with cutting-edge web solutions!</p><button class="learn-more">Learn More</button>
+                    </div>
+                    <div class="service-cards"><i class="fas fa-mobile-alt"></i><span class="topics">Mobile App Development</span><p>Turn your ideas into powerful mobile apps! We design and develop high-performance Android and iOS applications tailored to your business needs.</p><button class="learn-more">Learn More</button>
+                    </div>
+                    <div class="service-cards"><i class="fas fa-comments"></i><span class="topics">Free Consultation</span><p>Got questions? Get expert advice tailored to your needs. Book a free consultation and let's find the best solutions for your business!</p><button class="learn-more">Learn More</button>
+                    </div>
+                    <div class="service-cards"><i class="fas fa-graduation-cap"></i><span class="topics">Software Academy</span><p>Master in-demand tech skills with our expert-led courses in web development, mobile apps, AI, and more. Start your journey to becoming a tech pro today!</p><button class="learn-more">Learn More</button>
+                    </div>
+                    <div class="service-cards"><i class="fas fa-headset"></i><span class="topics">Online Tutoring</span><p>Learn from the best, anytime, anywhere! Our expert tutors provide personalized, interactive lessons to help you master new skills and achieve your goals.</p><button class="learn-more">Learn More</button>
+                    </div>
+                    <div class="service-cards"><i class="fas fa-users"></i><span class="topics">Social Media Management</span><p>Boost your brand’s online presence with expert social media strategies! We create engaging content, manage accounts, and grow your audience effectively.</p><button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <h2>Let's Work Together</h2>
+                <div id="contact-container">
+                    <div id="contact-info">
+                        <h3>Give us a Call:</h3>
+                        <h3><i class="fas fa-mobile-alt"></i>+(234) 706-426-5426, 803-869-1155</h3>
+                        <h3><i class="fas fa-envelope"></i>memorasmart@gmail.com</h3>
+                        <div id="social-handles">
+                            <a href="https://web.facebook.com/profile.php?id=61570414111089" target="_blank"><i class="fab fa-facebook"></i>facebook</a>
+                            <a href="https://www.twitter.com/memorasmarttech" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                            <a href="https://www.linkedin.com/memorasmarttech" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                            <a href="https://www.instagram.com/memorasmarttech" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+                        </div>
+                        <h3>Visit Us:</h3>
+                        <p id = "address"><i class="fas fa-map-marker-alt"></i>Address: 93 Azikiwe Street, Port Harcourt, Nigeria<iframe 
+                            width="100%" 
+                            height="250" 
+                            style="border:0; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);" 
+                            loading="lazy" 
+                            allowfullscreen 
+                            referrerpolicy="no-referrer-when-downgrade" 
+                            src="https://www.google.com/maps?q=93+Azikiwe+Street,+Port+Harcourt,+Nigeria&output=embed" sandbox="allow-scripts allow-same-origin allow-modals" sandbox="allow-scripts allow-same-origin allow-modals">
+                        </iframe></p>
+                        <section id="contact-form">
+                            <h3>Please Fill This Contact Form</h3>
+                            
+                        </section>
+                    </div>
+        </main>
+        <section id="about-section">
+        <div id="about">
+            <h2>About Us</h2>
+            <p>
+                <strong>Memora Smart Technologies</strong> is a digital solutions provider specializing in 
+                <strong>digital marketing, software development, IT training, and business consulting</strong>.  
+                Our mission is to empower businesses and clients drive massive sales through advanced digital marketing
+                and cutting-edge technology. We offer expert-led training in software development, digital marketing, and more.
+            </p>
+        
+            <div id="about-flex-container">
+                <!-- Our Vision Card -->
+                <div class="about-card">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be a global leader in digital innovation, helping clients reach their target audience  
+                        and drive massive sales through advanced digital marketing and cutting-edge technology.
+                    </p>
+                </div>
+        
+                <!-- Our Mission Card -->
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To empower individuals and businesses with industry-relevant skills in:
+                    </p>
+                    <ul>
+                        <li> Software Development (Web & Mobile)</li>                        
+                        <li> Digital Marketing & SEO</li>
+                        <li> Graphics & UI/UX Design</li>
+                        <li> Data Analysis & Business Intelligence</li>
+                        <li> IT Consulting & Business Automation</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li> Expert team of software developers and digital marketers.</li>
+                <li> Experts in CyberSecurity</li>
+                <li> Proven track record of successful projects.</li>
+                <li> Industry-recognized IT training and certifications.</li>
+                <li> Customized solutions tailored to your business needs.</li>
+            </ul>
+        
+            <p>Join us today... let's turn your ideas into reality!</p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h1>Students Projects/Soft creations</h1>
+        <div id="portfolio-container">
+            <div class="slide">
+                <div>
+                    <h3>Butterfly Sketch</h3>
+                    <p>This is a stunning digital drawing created by one of our students using CorelDRAW. The project showcases their mastery of vector design, shading techniques, and precision detailing. Through our hands-on training, students develop industry-standard graphic design skills, enabling them to create professional logos, illustrations, and branding materials.</p>
+                </div>
+                <div>
+                    <video width="300" height="360" controls>
+                        <source src="images/video 1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <h3>Coding</h3>
+                    <p>Young students, aged 14 and below, are introduced to the fundamentals of programming through beginner-friendly languages like QBasic. They gain hands-on experience by building practical projects such as a CGPA calculator and basic math programs, helping them develop logical thinking and problem-solving skills early on..</p>
+                </div>
+                <div>
+                    <video width="300" height="360" controls>
+                        <source src="images/video 4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <h3>Landing Page</h3>
+                    <p>"Boost Your Sales with Custom Landing Pages!"
+                        We design high-converting, tailor-made landing pages that capture attention and drive results. Whether you're launching a new product, running a campaign, or growing your brand, our expertly crafted pages ensure maximum impact. Let’s turn visitors into customers—get started today!</p>
+                </div>
+                <div>
+                    <iframe src="t-stitches.html" width="300" height="300px" frameborder="0" sandbox="allow-scripts allow-same-origin allow-modals"></iframe>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <h3>Landing Page</h3>
+                    <p>"Boost Your Sales with Custom Landing Pages!"
+                        We design high-converting, tailor-made landing pages that capture attention and drive results. Whether you're launching a new product, running a campaign, or growing your brand, our expertly crafted pages ensure maximum impact. Let’s turn visitors into customers—get started today!</p>
+                </div>
+                <div>
+                    <iframe src="tee-kitchen.html" width="300" height="300px" frameborder="0" sandbox="allow-scripts allow-same-origin allow-modals"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="responseModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">X</button>
+            <h2>AI Response</h2>
+            <div id="responseContainer" class="response-container"></div>
+        </div>
+    </div>
+    
+        <footer>
+            <div id="rights">
+                <p>&copy; 2025 Memora Smart Technologies. All Rights Reserved.</p>
+            </div>
+            <div id="handles">
+                <a href="https://web.facebook.com/profile.php?id=61570414111089" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/memorasmarttech" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/memorasmarttech" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/memorasmarttech" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
